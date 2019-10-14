@@ -1,0 +1,140 @@
+.portada {
+          background-image: url(../img/registro.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+}
+form {
+          width: 60%;
+          margin: 0 auto;
+}
+main {
+          background: linear-gradient(to right, #004e92, #000428); 
+}
+/*Selectores CLASS ID*/
+.registro {
+          display: grid;
+          grid-template-columns: 30% 1fr 30%;
+          grid-template-rows: 9% 89%;
+          height: 1000px;
+          grid-row-gap: 1rem;
+}
+
+.titulo-registro {
+          text-align: center;
+          font-size: 1.4rem;
+          color: white;
+          grid-column: 2 / 3;
+          border-bottom: 5px solid #FF5744;
+}
+.contenido {
+          display: grid;
+          background-color: white;
+          grid-column: 2 / 3;
+          grid-row: 2 / 3;
+          border-radius: 2rem;
+          align-content: center;
+          height: 850px;
+}
+.input {
+          margin-bottom: 1rem;
+}
+.input label {
+          font-size: 1rem;
+          letter-spacing: 2.5px;
+}
+.submit {
+          text-align: center;
+}
+.submit input {
+          width: 140px;
+          height: 45px;
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          font-weight: 500;
+          color: #000;
+          background-color: #fff;
+          border: 1px solid #004e92;
+          border-radius: 45px;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          outline: none;
+}
+.submit input:hover {
+          background-color: #004e92;
+          box-shadow: 0px 15px 20px rgba(12, 36, 97, 0.4);
+          color: #fff;
+          transform: translateY(-5px);
+}
+a[id="a-pagina"] {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          font-weight: 500;
+          color: #000;
+          display: none;
+          padding: 1rem;
+          text-decoration: none;
+          background-color: #fff;
+          border: 1px solid #004e92;
+          border-radius: 45px;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease 0s;
+}
+a[id="a-pagina"]:hover {
+          background-color: #004e92;
+          box-shadow: 0px 15px 20px rgba(12, 36, 97, 0.4);
+          color: #fff;
+          transform: translateY(-5px);
+}
+.input input {
+          margin-top: .5rem;
+          border: 1px solid #95a5a6;
+          outline: none;
+          letter-spacing: 2.5px;
+          border-radius: .3rem;
+          width: 87%;
+          padding: .5rem 1rem .5rem 1rem;
+          transition-property: border-bottom;
+          transition-duration: .1s;
+          transition-timing-function: ease-in-out;
+}
+.input input:focus {
+          border-bottom: 3px solid #004e92;
+}
+@media screen and (max-width:1060px) {
+          .registro {
+                    grid-template-columns: 25% 1fr 25%;
+          }
+}
+@media screen and (max-width: 713px) {
+          .registro {
+                    grid-template-columns: 20% 1fr 20%;
+          }
+          
+}
+@media screen and (max-width: 594px) {
+          .registro {
+                    grid-template-columns: 10% 1fr 10%;
+          }  
+}
+.input-checkbox {
+          display: inline-block;
+          font-size: .9rem;
+          word-spacing: 1px;
+          margin-bottom: 1rem;
+}
+.input-radio {
+          margin-bottom: 1rem;
+          line-height: 30px;
+}
+.label {
+          font-size: 1rem;
+          letter-spacing: 2.5px;
+          font-weight: 500;
+          margin-bottom: 1rem;
+}
+label[for="mujer"], label[for="hombre"] {
+          margin-right: 50px;
+}

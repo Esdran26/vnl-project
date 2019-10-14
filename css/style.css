@@ -1,0 +1,165 @@
+body {
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+          background-color: white;
+}
+header {
+          display: grid;
+          grid-template-columns: 1fr 25%;
+          background-image: url(../img/header.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100px;
+}
+img {
+          width: 250px;
+          height: 80px;
+          float: right;
+          margin-top: .6rem;
+          margin-right: 20px;
+          border: 1px solid white;
+}
+.sitio {
+          display: grid;
+          grid-template-rows: 100px 700px 1000px 50px;
+}
+.enlaces, .navegacion-hamburguesa {
+          margin-top: 40px;
+          margin-left: 50px;
+}
+.enlaces a {
+          margin-right: 20px;
+          font-size: 1.4rem;
+          color: white;
+          text-decoration: none;
+          transition: all .3s ease-in-out;
+}
+.enlaces a:hover {
+          border-bottom: 3px solid white;
+}
+.logo {
+          grid-column: 2 / 3;
+}
+
+.portada {
+          display: grid;
+          background-image: url(../img/portada.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          grid-template-columns: 550px 1fr;
+          grid-template-rows: 70px 70px;
+          grid-row: 2 / 3;
+          align-content: center;
+}
+.titulo, .subtitulo {
+          margin-left: 50px;
+          padding-left: 10px;
+          font-size: 1.2rem;
+          color: white;
+          background-color: rgb(32, 33, 44);
+          opacity: 0.9;
+}
+.subtitulo {
+          grid-row: 2 / 3;
+          grid-column: 1 / 2;
+          font-size: 1.6rem;
+}
+footer {
+          background-color: #1e272e;
+          color: #95a5a6;
+          text-align: center;
+          grid-row: 4 / 5;
+}
+footer p{
+          display: inline-block;
+}
+.titulo-inicio {
+          display: grid;
+          text-align: center;
+          grid-template-columns: 1fr 400px 1fr;
+          font-size: 1.2rem;
+          margin: 0 auto;
+}
+.titulo-inicio h1 {
+          border-bottom: 5px solid #FF5744;
+          grid-column: 2 / 3;
+          text-transform: uppercase;
+}
+.contenedor {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+          margin: 0 100px 0 100px;
+          grid-gap: 1rem;
+          height: 700px;
+}
+.servicio2, .servicio1 {
+          text-align: center;
+          border: 1px solid #bdc3c7;
+}
+.servicio1 img, .servicio2 img {
+          width: 100%;
+          margin: 0 0 1rem 0;
+          height: 300px;
+          border: 1px solid #bdc3c7;
+}
+.titulo-servicio {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+}
+.servicio1 h3, .servicio2 h3 {
+          text-transform: uppercase;
+}
+.servicio1 p, .servicio2 p {
+          margin: 1rem 3rem 2rem 3rem;
+          text-align: center;
+          font-size: 1.1rem;
+}
+.servicio1 a[class="btn-info"], .servicio2 a[class="btn-info"] {
+          text-decoration: none;
+          padding: 8px 15px 8px 15px;
+          font-size: 1.2rem;
+          margin: 2rem;
+          border-radius: .5rem;
+          color: #FF5744;
+          border: 1px solid #FF5744;
+          box-shadow: 0px 4px 7px #FF5744;
+          transition: all 0.3s ease 0s;
+          outline: none;
+}
+.servicio1 a[class="btn-info"]:hover, .servicio2 a[class="btn-info"]:hover {
+          color: white;
+          background-color: #FF5744;
+          box-shadow: 0px 7px 10px #FF5744;
+          transform: translateY(-5px);
+}
+@media screen and (max-width: 882px) {
+          .sitio {
+                    display: grid;
+                    grid-template-rows: 100px 700px 1500px 50px;
+          }
+          footer {
+                    grid-row: 6 / 7;
+          }
+          .contenedor {
+                    height: 1400px;
+          }
+}
+.navegacion-hamburguesa {
+          display: none;
+}
+@media (max-width: 720px) {
+          header {
+                    grid-template-columns: 1fr 2fr;
+          }
+          .enlaces {
+              display: none;
+          }
+          .titulo {
+              align-content: center;
+          }
+          .navegacion-hamburguesa {
+              display: grid;
+              color: white;
+              cursor: pointer;
+          }
+}

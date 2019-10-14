@@ -1,0 +1,31 @@
+.portada {
+          background-image: url(../img/precios.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+}
+.tabla {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;    
+    }
+table {
+       grid-column: 2 / 3;
+}
+td, tr, th {
+      text-align: center;
+      border: 1px solid #95a5a6;
+      margin: 1rem;
+      padding: 1rem 3rem 1rem 3rem;
+}
+.no {
+      background-color: rgb(211, 113, 115);
+}
+.si {
+      background-color: #576AB9;
+}
+th {
+      font-weight: 100;
+}
+thead, th {
+      background-color: #1e272e;
+      color: white;
+}   

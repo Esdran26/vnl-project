@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <script src="https://kit.fontawesome.com/de6467cf36.js"></script>
+          <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/fondo-registro.css">
+          <title>Volleyball Nations League</title>
+</head>
+<body>
+          <div class="sitio">
+                    <div class="header">
+                              <!--Navegación-->
+                              <header>
+                                        <nav>
+                                                  <div class="enlaces">
+                                                            <a href="index.html">Inicio</a>
+                                                            <a href="precios.html">Precios</a>
+                                                            <a href="registro.html">Registro</a>
+                                                             <a href="ejercicio.html">Ejercicio</a>
+                                                  </div>
+                                                  <div class="navegacion-hamburguesa">
+                                                            <i class="fas fa-bars fa-lg fa-2x"></i>
+                                                  </div>
+                                        </nav>
+                                        <div class="logo">
+                                                  <a href="index.html"><img src="img/logo.jpg" alt="Volleyball Nations League"></a>
+                                        </div>
+                              </header><!--Navegación-->
+                    </div>
+                    <!--Portada-->
+                    <div class="portada">
+                              <div class="titulo">
+                                        <h1>Volleyball Nations League</h1>
+                              </div>
+                              <div class="subtitulo">
+                                        <p>Se parte del juego</p>
+                              </div>
+                    </div><!--Portada-->
+                    <!--Registro-->
+                    <main>
+                              <div class="registro">
+                                        <div class="titulo-registro">
+                                                  <h1>Registro de Usuarios</h1>
+                                        </div>
+                                        <div class="contenido">
+                                        <form id="formulario" action="#">
+                                        <div class="input">
+                                                  <label id="label-usuario" for="usuario">Usuario:</label><br>
+                                                  <input type="text" id="input-usuario" name="usuario" placeholder="Nombre de Usuario" required>
+                                        </div>
+                                        <div class="input">
+                                                  <label id="label-email" for="email">Correo Electrónico:</label><br>
+                                                  <input type="email" id="input-email" name="email" placeholder="Correo Electrónico" required>
+                                        </div>
+                                        <div class="input">
+                                                  <label id="label-contraseña" for="contraseña">Contraseña:</label><br>
+                                                  <div class="input-con-icono">
+                                                            <input type="password" id="input-contraseña" name="contraseña" placeholder="Contraseña">
+                                                  </div>
+                                        </div>
+                                        <div class="input">
+                                                  <label for="fecha-nacimiento">Fecha de Nacimiento:</label><br>
+                                                  <input type="month" name="fecha-nacimiento" id="fecha-nacimiento">
+                                        </div>
+                                        <div class="input">
+                                                  <label for="color">Escoge un Color: </label><br>
+                                                  <input type="color" name="color" id="color">
+                                        </div>
+                                        <div class="input">
+                                                  <label for="telefono">Introduce tu teléfono:</label><br>
+                                                  <input type="tel" name="telefono" id="telefono">
+                                        </div>
+                                        <div class="input">
+                                                  <label id="label-comentario" for="comentarios">Comentarios:</label><br>
+                                                  <textarea name="comentarios" id="comentarios" cols="35" rows="5"></textarea>
+                                        </div>
+                                        <div class="input-radio">  
+                                                  <label class="label" for="">Cuál es su género?</label><br>
+                                                  <label for="mujer">
+                                                            <input type="radio" name="genero" value="mujer"> Mujer
+                                                  </label>
+                                                  <label for="hombre">
+                                                            <input type="radio" name="genero" value="hombre"> Hombre
+                                                  </label>
+                                        </div>
+                                        <div class="input-checkbox">
+                                                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                                                  <label for="checkbox"> Acepta los terminos y condiciones</label>
+                                        </div>
+                                        
+                                        <div class="submit">
+                                                  <input type="submit" id="input-submit" value="Registrarse">
+                                        </div>
+                                        </form>
+                                        </div>
+                              </div>
+                    </main><!--Registro-->
+                    <!--Footer-->
+                    <footer>
+                              <p>Desarollado por Andrés Vargas. Todos los derechos reservados 2019 ©</p> |
+                              <p>Política de Privacidad</p> |
+                              <p>Términos de Servicio</p>
+                    </footer><!--Footer-->
+          </div>
+          
+</body>
+</html>
